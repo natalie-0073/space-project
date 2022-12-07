@@ -1,0 +1,13 @@
+@mixin headings($family){
+    font-weight: 100;
+    text-transform: uppercase;
+    font-family: $family;
+}
+@mixin background-photo($url){
+    background:url($url) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    min-width: 100vw;
+}

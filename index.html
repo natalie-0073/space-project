@@ -3,6 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="src/styles.css">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
@@ -12,16 +16,17 @@
 <body class="page">
 <header class="header">
 <div class="header-menu">
+  <div class="header-menu__btn"><img src="assets/shared/icon-hamburger.svg" alt="menu-hamburger"/></div>
   <div class="header-logo">
     <img src="assets/shared/logo.svg" alt="header-logo">
   </div>
   <div class="header-line"></div>
   <nav class="header-navbar">
     <ul class="header-navbar__list">
-      <li class="header-navbar__item"><a class="header-navbar__link" href="#"><span>00</span> Home</a></li>
-      <li class="header-navbar__item"><a class="header-navbar__link" href="#"><span>01</span> Destination</a></li>
-      <li class="header-navbar__item"><a class="header-navbar__link" href="#"><span>02</span> Crew</a></li>
-      <li class="header-navbar__item"><a class="header-navbar__link" href="#"><span>03</span> Technology</a></li>
+      <li class="header-navbar__item"><a class="header-navbar__link" href="index.html"><b class="header-navbar__number">00</b> Home</a></li>
+      <li class="header-navbar__item"><a class="header-navbar__link" href="#"><b class="header-navbar__number">01</b> Destination</a></li>
+      <li class="header-navbar__item"><a class="header-navbar__link" href="#"><b class="header-navbar__number">02</b> Crew</a></li>
+      <li class="header-navbar__item"><a class="header-navbar__link" href="#"><b class="header-navbar__number">03</b> Technology</a></li>
     </ul>
   </nav>
 </div>
@@ -30,16 +35,19 @@
 <main class="main">
   <div class="main-container">
     <div class="main-text">
-      <h3 class="main-text__h3">So, you want to travel to</h3>
+      <h3 class="main-text__subheading">So, you want to travel to</h3>
       <h1 class="main-text__heading">Space</h1>
       <p class="main-text__paragraph">Let’s face it; if you want to go to space, you might as well genuinely go to 
         outer space and not hover kind of on the edge of it. Well sit back, and relax 
         because we’ll give you a truly out of this world experience!</p>
     </div>
+    
     <div class="main-button">
       <a href="" class="main-button__link">Explore</a>
     </div>
+  
   </div>
 </main>
+<script src="index.js"></script>
 </body>
 </html>
