@@ -14,14 +14,11 @@
     grid-area: logo;
 }
 .header-line{
-    position: absolute;
+    @include lines;
     grid-area: line;
     
     width: 135%;
     left: -27%;
-        height: 0.1px;
-        opacity: 0.3;
-        background-color: #fff;
 }
 .header-navbar{
     grid-area: nav;
