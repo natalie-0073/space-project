@@ -1,0 +1,71 @@
+.page-crew{
+    @include background-photo("/assets/crew/background-crew-desktop.jpg");
+    margin: 0;
+}
+.crew-subheading{
+    @include subheading;
+    margin-bottom: 0%;
+    color: $white-pure;
+    &__num{
+        opacity: .4;
+    }
+}
+.crew-info{
+    display: flex;
+    flex-direction: row-reverse;
+    position: fixed;
+    bottom: 0;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.crew-photo{
+    max-width: 28%;
+    
+}
+.crew-photo__image{
+    width: 100%;
+}
+.crew-nav{
+    display: flex;
+    gap: 15px;
+    margin-top: 50px;
+    &__link{
+        width: 10px;
+        height: 10px;
+        background: rgba(255,255,255,0.2);
+        border-radius: 50%;
+        
+        &:hover{
+            cursor: pointer;
+            background: $white-pure;
+            transition: all .5s;
+        }
+    }
+}
+.active{
+    background: $white-pure;
+}
+
+.crew-text{
+    max-width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    &__heading{
+        margin: 0;
+        color: $white-pure;
+        @include headings($primary-font-family);
+        font-size: $big-heading;
+    }
+    &__subheading{
+        margin: 0;
+        color: $white-opacity;
+        @include headings($primary-font-family);
+        font-size: $small-heading;
+    }
+    &__paragraph{
+        max-width: 75%;
+        margin: 0;
+        @include paragraphs;
+    }
+}
