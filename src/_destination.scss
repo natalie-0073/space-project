@@ -27,6 +27,20 @@
     }
     .destination-photo__image{
         width: 100%;
+        @include keyframes(rotate){
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+            
+        }
+        @include animate(rotate, 50s, 0s, both, linear, infinite, paused);
+        &:hover{
+        animation-play-state: running;
+        }
+        
     }
     .destination-photo{
         max-width: 24%;
@@ -68,6 +82,14 @@
       transform-origin: bottom left;
         }
         
+    }
+    .destination-text__heading{
+        @include keyframes(scaleIn){
+            0%{transform: scale(0.2);}
+           
+            100%{transform: scale(1);}
+        }
+        @include animate(scaleIn, 0.5s, 0s, both, linear, 1, running);
     }
    
     .destination-text{
@@ -173,6 +195,9 @@ bottom: 0;
         }
         .destination-description{
             max-width: 80%;
+        }
+        .destination-photo__image{
+            animation-play-state: running;
         }
         .numbers{
             font-size: $small-heading;

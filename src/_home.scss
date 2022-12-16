@@ -25,6 +25,15 @@
         @include headings($primary-font-family);
         font-size: $biggest-heading;
         margin: 0px;
+        @include keyframes(fade){
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+        @include animate(fade, 5s, 0s, both, linear, 1, running);
     }
     &__paragraph{
         @include paragraphs;

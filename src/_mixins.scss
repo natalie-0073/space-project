@@ -29,3 +29,13 @@
         font-size: $smaller-heading;
         margin: 0px 0px 2% 12%;
 }
+@mixin animate($animation, $duration, $timing, $delay, $fill,$repeat, $play){
+    
+    animation: $animation $duration $timing $delay $fill $repeat $play;
+   
+}
+@mixin keyframes($name){
+    @keyframes #{$name}{
+        @content;
+    }
+}

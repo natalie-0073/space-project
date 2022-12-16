@@ -157,6 +157,24 @@
   font-family: "Bellefair", serif;
   font-size: 150px;
   margin: 0px;
+  -webkit-animation: fade 5s 0s both linear 1 running;
+          animation: fade 5s 0s both linear 1 running;
+}
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .main-home .main-text__paragraph {
   font-family: "Barlow", sans-serif;
@@ -304,6 +322,28 @@
 
 .destination-photo__image {
   width: 100%;
+  -webkit-animation: rotate 50s 0s both linear infinite paused;
+          animation: rotate 50s 0s both linear infinite paused;
+}
+@-webkit-keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.destination-photo__image:hover {
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
 }
 
 .destination-photo {
@@ -346,6 +386,27 @@
 .destination-list__link:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+.destination-text__heading {
+  -webkit-animation: scaleIn 0.5s 0s both linear 1 running;
+          animation: scaleIn 0.5s 0s both linear 1 running;
+}
+@-webkit-keyframes scaleIn {
+  0% {
+    transform: scale(0.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes scaleIn {
+  0% {
+    transform: scale(0.2);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .destination-text {
@@ -463,6 +524,10 @@
   .destination-description {
     max-width: 80%;
   }
+  .destination-photo__image {
+    -webkit-animation-play-state: running;
+            animation-play-state: running;
+  }
   .numbers {
     font-size: 32px;
   }
@@ -567,12 +632,33 @@
   gap: 15px;
 }
 .crew-text__heading {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
   margin: 0;
   color: rgb(255, 255, 255);
   font-weight: 100;
   text-transform: uppercase;
   font-family: "Bellefair", serif;
   font-size: 56px;
+  -webkit-animation: typing 1s 1s both steps(14) 1 running;
+          animation: typing 1s 1s both steps(14) 1 running;
+}
+@-webkit-keyframes typing {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes typing {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 100%;
+  }
 }
 .crew-text__subheading {
   margin: 0;
