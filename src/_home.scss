@@ -5,7 +5,7 @@
 }
 .main-home{
     margin-top: 120px;
-
+}
 .main-container{
     display: flex;
     gap: 250px;
@@ -67,15 +67,18 @@
         }
         
     }
-}}
+}
 @media(max-width:1025px){
     
         .main-container{
             gap: 150px;
         }
-        .main-text__heading{
-            font-size: 120px;
+        .main-text{
+            &__heading{
+                font-size: 120px;
+            }
         }
+        
     
    
 }
@@ -97,10 +100,10 @@
     .main-button{
         align-self: auto;
         margin-bottom: 50px;
-    }
-    .main-button__link{
-        height: 200px;
+        &__link{
+            height: 200px;
         width: 200px;
+        }
     }
 
 }
@@ -108,9 +111,7 @@
     .page-home{
         @include background-photo("/assets/home/background-home-tablet.jpg");
      }
-    
-        
-         .main-text{
+      .main-text{
              max-width: 70%;
          }
     
@@ -126,24 +127,33 @@
 }
 @media(max-width:500px){
     
-        .main-text__heading{
-            font-size: $bigger-heading;
+        .main-text{
+            &__heading{
+                font-size: $bigger-heading;
+            }
+            
         }
     
    
 }
 @media(max-width:425px){
     
-        .main-text__subheading{
-            font-size: $normal-text;
+        .main-text{
+            &__subheading{
+                font-size: $normal-text;
+            }
+            &__paragraph{
+                font-size: $smallest-heading;
+            }
+           
         }
-        .main-text__paragraph{
-            font-size: $smallest-heading;
-        }
-        .main-button__link{
-            height: 150px;
-            width: 150px;
-            font-size: $normal-text;
+        .main-button{
+            &__link{
+                height: 150px;
+                width: 150px;
+                font-size: $normal-text;
+            }
+            
         }
     
    .page-home{
