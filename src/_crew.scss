@@ -133,7 +133,6 @@
     max-width: 66%;
     &__heading {
       margin: 0 auto;
-      //max-width: 70%;
       display: block;
     }
     &__paragraph {
@@ -166,17 +165,6 @@
     flex-direction: column;
     margin-bottom: 15%;
     gap: 50px;
-    // &:first-child{
-    //     &::before{
-    //         content: '';
-    //         @include lines;
-    //         width: 100%;
-
-    //         //bottom: 0;
-    //         top: 0;
-    //         left: 0;
-    //     }
-    // }
   }
   .crew-nav {
     position: absolute;

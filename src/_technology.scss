@@ -45,7 +45,6 @@
   }
   @include animate(fade-in, 2s, ease-in-out, 0s, both, 1, running);
   max-width: 50%;
-  //background-image: url("/assets/technology/image-launch-vehicle-portrait.jpg");
   &__image {
     width: 100%;
     height: auto;
