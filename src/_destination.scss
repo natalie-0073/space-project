@@ -13,6 +13,7 @@
     }
     .destination-subheading{
         @include subheading;
+        margin-left: 12%;
        
     }
     .destination-heading__num{
@@ -191,7 +192,7 @@ bottom: 0;
             margin-bottom: 50px;
         }
         .destination-subheading{
-            margin: 3% 0% 3% 5%;
+            margin: 3% 0% 3% 12%;
         }
         .destination-description{
             max-width: 80%;

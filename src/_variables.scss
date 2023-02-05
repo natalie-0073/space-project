@@ -1,6 +1,7 @@
 $primary-font-family: 'Bellefair', serif;
 $secondary-font-family: 'Barlow', sans-serif;
-$primary-black: #0A0C17;
+$primary-black: rgba(10, 12, 23, 1);
+$black-opacity:rgba(10, 12, 23, 0.7);
 $primary-violet:#D0D6F9;
 $biggest-heading:150px;
 $bigger-heading:100px;
@@ -9,5 +10,6 @@ $small-heading: 32px;
 $smaller-heading: 28px;
 $smallest-heading:14px;
 $normal-text:16px;
+$tablet-subheading: 22px;
 $white-opacity:rgba(255,255,255,0.8);
 $white-pure:rgba(255,255,255,1);

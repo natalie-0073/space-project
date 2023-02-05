@@ -54,7 +54,7 @@ height: 100%;
 }
 .crew-text{
     
-    max-width: 55%;
+    max-width: 48%;
    
     display: flex;
     flex-direction: column;
@@ -102,7 +102,7 @@ height: 100%;
         margin: 0% 12%;
     }
     .crew-subheading{
-        font-size: $normal-text;
+        font-size: $tablet-subheading;
     }
     .crew-text{
         &__heading{
@@ -120,6 +120,9 @@ height: 100%;
     }
 }
 @media(max-width:768px){
+    .page-crew{
+        @include background-photo('/assets/crew/background-crew-tablet.jpg');
+    }
     .crew-info{
         flex-direction: column-reverse;
         margin: 0;
@@ -161,6 +164,9 @@ height: 100%;
     }
 }
 @media(max-width:500px){
+    .page-crew{
+        @include background-photo('/assets/crew/background-crew-mobile.jpg');
+    }
     .crew-info{
         flex-direction: column;
         margin-bottom: 15%;
@@ -206,4 +212,9 @@ height: 100%;
         }
     }
     
+}
+@media(max-width:390px){
+    .crew-text__heading{
+        font-size: $tablet-subheading;
+    }
 }
