@@ -1,220 +1,214 @@
-.page-crew{
-    @include background-photo("/assets/crew/background-crew-desktop.jpg");
-    margin: 0;
+.page-crew {
+  @include background-photo("/assets/crew/background-crew-desktop.jpg");
+  margin: 0;
 }
-.crew-subheading{
-    @include subheading;
-    margin-bottom: 0%;
-    color: $white-pure;
-    &__num{
-        opacity: .4;
-    }
+.crew-subheading {
+  @include subheading;
+  margin-bottom: 0%;
+  color: $white-pure;
+  &__num {
+    opacity: 0.4;
+  }
 }
-.crew-info{
-    display: flex;
-    flex-direction: row-reverse;
-    position: fixed;
-    bottom: 0;
-    justify-content: space-between;
-    align-items: center;
-    max-height: 550px;
-    margin: 0% 12%;
-   
+.crew-info {
+  display: flex;
+  flex-direction: row-reverse;
+  position: fixed;
+  bottom: 0;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 550px;
+  margin: 0% 12%;
 }
 
-.crew-photo__image{
-    max-width: 100%;
+.crew-photo__image {
+  max-width: 100%;
 }
-.crew-nav{
-    display: flex;
-    gap: 15px;
-    margin-top: 50px;
-    &__link{
-        width: 10px;
-        height: 10px;
-        background: rgba(255,255,255,0.2);
-        border-radius: 50%;
-        
-        &:hover{
-            cursor: pointer;
-            background: $white-pure;
-            transition: all .5s;
-        }
-    }
-}
-.nav-link{
-    
-display: block;
-width: 100%;
-height: 100%;
+.crew-nav {
+  display: flex;
+  gap: 15px;
+  margin-top: 50px;
+  &__link {
+    width: 10px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.2);
     border-radius: 50%;
+
+    &:hover {
+      cursor: pointer;
+      background: $white-pure;
+      transition: all 0.5s;
+    }
+  }
 }
-.active{
-    background: $white-pure;
+.nav-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
 }
-.crew-text{
-    
-    max-width: 48%;
-   
-    display: flex;
+.active {
+  background: $white-pure;
+}
+.crew-text {
+  max-width: 48%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  &__heading {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0;
+    color: $white-pure;
+    @include headings($primary-font-family);
+    font-size: $big-heading;
+    @include keyframes(typing) {
+      0% {
+        width: 0px;
+      }
+      100% {
+        width: 100%;
+      }
+    }
+    @include animate(typing, 1s, 1s, both, steps(14), 1, running);
+  }
+  &__subheading {
+    margin: 0;
+    color: $white-opacity;
+    @include headings($primary-font-family);
+    font-size: $small-heading;
+  }
+  &__paragraph {
+    max-width: 75%;
+    margin: 0;
+    @include paragraphs;
+  }
+}
+@media (max-width: 1451px) {
+  .crew-info {
+    justify-content: center;
+    margin: 0;
+  }
+}
+@media (max-width: 1120px) {
+  .crew-info {
+    max-height: 400px;
+    justify-content: space-between;
+    margin: 0% 12%;
+  }
+  .crew-subheading {
+    font-size: $tablet-subheading;
+  }
+  .crew-text {
+    &__heading {
+      font-size: $small-heading;
+    }
+    &__subheading {
+      font-size: $smallest-heading;
+    }
+  }
+}
+@media (max-width: 835px) {
+  .crew-info {
+    margin: 0% 8%;
+  }
+}
+@media (max-width: 768px) {
+  .page-crew {
+    @include background-photo("/assets/crew/background-crew-tablet.jpg");
+  }
+  .crew-info {
+    flex-direction: column-reverse;
+    margin: 0;
+    max-height: 100%;
+    gap: 40px;
+  }
+  .crew-photo {
+    max-width: 20%;
+  }
+  .crew-text {
+    text-align: center;
+    max-width: 66%;
+    &__heading {
+      margin: 0 auto;
+      //max-width: 70%;
+      display: block;
+    }
+    &__paragraph {
+      max-width: 100%;
+    }
+  }
+  .crew-nav {
+    justify-content: center;
+    margin-top: 0px;
+  }
+  .crew-photo {
+    max-width: 25%;
+  }
+}
+@media (max-width: 600px) {
+  .crew-photo {
+    max-width: 30%;
+  }
+}
+@media (max-width: 526px) {
+  .crew-text {
+    max-width: 70%;
+  }
+}
+@media (max-width: 500px) {
+  .page-crew {
+    @include background-photo("/assets/crew/background-crew-mobile.jpg");
+  }
+  .crew-info {
     flex-direction: column;
-    gap: 15px;
-    &__heading{
-        display: block;
-        white-space: nowrap;
-        overflow: hidden;
-        margin: 0;
-        color: $white-pure;
-        @include headings($primary-font-family);
-        font-size: $big-heading;
-        @include keyframes(typing){
-            0%{
-               width: 0px;
-            }
-            100%{
-              width: 100%;
-            }
-        }
-        @include animate(typing, 1s, 1s, both, steps(14), 1, running);
-    }
-    &__subheading{
-        margin: 0;
-        color: $white-opacity;
-        @include headings($primary-font-family);
-        font-size: $small-heading;
-    }
-    &__paragraph{
-        max-width: 75%;
-        margin: 0;
-        @include paragraphs;
-    }
-}
-@media (max-width:1451px) {
-    .crew-info{
-        justify-content: center;
-        margin: 0;
-    }
-}
-@media(max-width:1120px){
-    .crew-info{
-       max-height: 400px;
-        justify-content: space-between;
-        margin: 0% 12%;
-    }
-    .crew-subheading{
-        font-size: $tablet-subheading;
-    }
-    .crew-text{
-        &__heading{
-            font-size: $small-heading;
-        }
-        &__subheading{
-            font-size: $smallest-heading;
-        }
-    }
-   
-}
-@media(max-width: 835px){
-    .crew-info{
-        margin: 0% 8%;
-    }
-}
-@media(max-width:768px){
-    .page-crew{
-        @include background-photo('/assets/crew/background-crew-tablet.jpg');
-    }
-    .crew-info{
-        flex-direction: column-reverse;
-        margin: 0;
-        max-height: 100%;
-         gap: 40px;
-    }
-    .crew-photo{
-        max-width: 20%;
-    }
-    .crew-text{
-        text-align: center;
-        max-width: 66%;
-        &__heading{
-            margin: 0 auto;
-            //max-width: 70%;
-            display: block;
-        }
-        &__paragraph{
-            max-width: 100%;
-        }
-    }
-    .crew-nav{
-        justify-content: center;
-        margin-top: 0px;
-    }
-    .crew-photo{
-        max-width: 25%;
-    }
-}
-@media(max-width:600px){
-    .crew-photo{
-        max-width: 30%;
-        
-    }
-}
-@media(max-width:526px){
-    .crew-text{
-        max-width: 70%;
-    }
-}
-@media(max-width:500px){
-    .page-crew{
-        @include background-photo('/assets/crew/background-crew-mobile.jpg');
-    }
-    .crew-info{
-        flex-direction: column;
-        margin-bottom: 15%;
-        gap: 50px;
-        // &:first-child{
-        //     &::before{
-        //         content: '';
-        //         @include lines;
-        //         width: 100%;
-                
-        //         //bottom: 0;
-        //         top: 0;
-        //         left: 0;
-        //     }
-        // }
-    }
-    .crew-nav{
-        position: absolute;
-    
+    margin-bottom: 15%;
+    gap: 50px;
+    // &:first-child{
+    //     &::before{
+    //         content: '';
+    //         @include lines;
+    //         width: 100%;
+
+    //         //bottom: 0;
+    //         top: 0;
+    //         left: 0;
+    //     }
+    // }
+  }
+  .crew-nav {
+    position: absolute;
+
     margin: -30px auto;
     width: 100%;
+  }
+  .crew-text {
+    max-width: 80%;
+    position: relative;
+    &__heading {
+      font-size: $smaller-heading;
     }
-    .crew-text{
-        max-width: 80%;
-        position: relative;
-        &__heading{
-            font-size: $smaller-heading;
-        }
-        &__paragraph{
-            font-size: $smallest-heading;
-        }
+    &__paragraph {
+      font-size: $smallest-heading;
     }
-    .crew-photo{
-        max-width: 45%;
-        position: relative;
-        &::after{
-            content: '';
-            @include lines;
-            width: 200%;
-            
-            bottom: 0;
-            left:-50%;
-        }
+  }
+  .crew-photo {
+    max-width: 36%;
+    position: relative;
+    &::after {
+      content: "";
+      @include lines;
+      width: 200%;
+
+      bottom: 0;
+      left: -50%;
     }
-    
+  }
 }
-@media(max-width:390px){
-    .crew-text__heading{
-        font-size: $tablet-subheading;
-    }
+@media (max-width: 390px) {
+  .crew-text__heading {
+    font-size: $tablet-subheading;
+  }
 }

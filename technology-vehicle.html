@@ -1,67 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="src/styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/styles.css">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Space tourism website</title>
 </head>
+
 <body class="page-technology">
-<header class="header">
-<div class="header-menu">
-  <div class="header-menu__btn"><img src="assets/shared/icon-hamburger.svg" alt="menu-hamburger"/></div>
-  <div class="header-logo">
-    <img src="assets/shared/logo.svg" alt="header-logo">
-  </div>
-  <div class="header-line"></div>
-  <nav class="header-navbar">
-    <ul class="header-navbar__list">
-      <li class="header-navbar__item"><a class="header-navbar__link" href="index.html"><b class="header-navbar__number">00</b> Home</a></li>
-      <li class="header-navbar__item"><a class="header-navbar__link" href="destination-moon.html"><b class="header-navbar__number">01</b> Destination</a></li>
-      <li class="header-navbar__item"><a class="header-navbar__link" href="crew-commander.html"><b class="header-navbar__number">02</b> Crew</a></li>
-      <li class="header-navbar__item"><a class="header-navbar__link active-nav" href="technology-vehicle.html"><b class="header-navbar__number">03</b> Technology</a></li>
-    </ul>
-  </nav>
-</div>
-</header>
- <main class="main-technology">
-  <div class="tech-container">
-    <h3 class="tech-subheading"><span class="tech-subheading__num">03</span> Space launch 101</h3>
-    <div class="tech-info">
-      <div class="tech-numbers">
-        
-        <a href="technology-vehicle.html"class="tech-numbers__link active">1</a>
-        <a href="technology-spaceport.html"class="tech-numbers__link">2</a>
-        <a href="technology-capsule.html" class="tech-numbers__link">3</a>
+  <div class="sidenav">
+    <div class="sidenav-container">
+      <div class="sidenav-close">
+        <div class="sidenav-close__btn"></div>
       </div>
-      <div class="tech-text">
-        <h4 class="tech-text__subheading">The terminology...</h4>
-        <h1 class="tech-text__heading">Launch vehicle</h1>
-        <p class="tech-text__paragraph">A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a 
-          payload from Earth's surface to space, usually to Earth orbit or beyond. Our 
-          WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, 
-          it's quite an awe-inspiring sight on the launch pad!</p>
-      </div>
-      <div class="tech-photo">
-        <picture >
-          <source media="(max-width:768px)" srcset="/assets/technology/image-launch-vehicle-landscape.jpg">
-          <img class="tech-photo__image" src="/assets/technology/image-launch-vehicle-portrait.jpg" alt="a">
-        </picture>
-        <!-- <img class="tech-photo__image" src="assets/technology/image-launch-vehicle-portrait.jpg"/> -->
-        
-      </div>
+
+      <a href="index.html" class="sidenav-container__link"><span class="sidenav-link__num">00 </span>home</a>
+      <a href="destination-moon.html" class="sidenav-container__link"><span class="sidenav-link__num">01
+        </span>destination</a>
+      <a href="crew-commander.html" class="sidenav-container__link"><span class="sidenav-link__num">02 </span>crew</a>
+      <a href="technology-vehicle.html" class="sidenav-container__link"><span class="sidenav-link__num">03
+        </span>technology</a>
     </div>
   </div>
- </main>
+  <header class="header">
+    <div class="header-menu">
+      <div class="header-menu__btn"><img src="assets/shared/icon-hamburger.svg" alt="menu-hamburger" /></div>
+      <div class="header-logo">
+        <img src="assets/shared/logo.svg" alt="header-logo">
+      </div>
+      <div class="header-line"></div>
+      <nav class="header-navbar">
+        <ul class="header-navbar__list">
+          <li class="header-navbar__item"><a class="header-navbar__link" href="index.html"><b
+                class="header-navbar__number">00</b> Home</a></li>
+          <li class="header-navbar__item"><a class="header-navbar__link" href="destination-moon.html"><b
+                class="header-navbar__number">01</b> Destination</a></li>
+          <li class="header-navbar__item"><a class="header-navbar__link" href="crew-commander.html"><b
+                class="header-navbar__number">02</b> Crew</a></li>
+          <li class="header-navbar__item"><a class="header-navbar__link active-nav" href="technology-vehicle.html"><b
+                class="header-navbar__number">03</b> Technology</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="main-technology">
+    <div class="tech-container">
+      <h3 class="tech-subheading"><span class="tech-subheading__num">03</span> Space launch 101</h3>
+      <div class="tech-info">
+        <div class="tech-numbers">
 
-<script src="index.js"></script>
+          <a href="technology-vehicle.html" class="tech-numbers__link active">1</a>
+          <a href="technology-spaceport.html" class="tech-numbers__link">2</a>
+          <a href="technology-capsule.html" class="tech-numbers__link">3</a>
+        </div>
+        <div class="tech-text">
+          <h4 class="tech-text__subheading">The terminology...</h4>
+          <h1 class="tech-text__heading">Launch vehicle</h1>
+          <p class="tech-text__paragraph">A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry
+            a
+            payload from Earth's surface to space, usually to Earth orbit or beyond. Our
+            WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall,
+            it's quite an awe-inspiring sight on the launch pad!</p>
+        </div>
+        <div class="tech-photo">
+          <picture>
+            <source media="(max-width:768px)" srcset="/assets/technology/image-launch-vehicle-landscape.jpg">
+            <img class="tech-photo__image" src="/assets/technology/image-launch-vehicle-portrait.jpg" alt="a">
+          </picture>
+          <!-- <img class="tech-photo__image" src="assets/technology/image-launch-vehicle-portrait.jpg"/> -->
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="index.js"></script>
 </body>
+
 </html>

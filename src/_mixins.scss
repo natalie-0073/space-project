@@ -1,41 +1,38 @@
-@mixin headings($family){
-    font-weight: 100;
-    text-transform: uppercase;
-    font-family: $family;
-    
+@mixin headings($family) {
+  font-weight: 100;
+  text-transform: uppercase;
+  font-family: $family;
 }
-@mixin paragraphs{
-    font-family: $secondary-font-family;
-        color: $white-opacity;
-        font-size: $normal-text;
-        line-height: 1.7;
+@mixin paragraphs {
+  font-family: $secondary-font-family;
+  color: $white-opacity;
+  font-size: $normal-text;
+  line-height: 1.7;
 }
-@mixin background-photo($url){
-    background:url($url) ;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 100vh;
-    min-width: 100vw;
+@mixin background-photo($url) {
+  background: url($url);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  min-width: 100vw;
 }
-@mixin lines{
-    position: absolute;
-        height: 0.1px;
-        opacity: 0.3;
-        background-color: $white-pure;
+@mixin lines {
+  position: absolute;
+  height: 0.1px;
+  opacity: 0.3;
+  background-color: $white-pure;
 }
-@mixin subheading{
-    @include headings($secondary-font-family);
-        font-size: $smaller-heading;
-        margin: 0px 0px 2% 12%;
+@mixin subheading {
+  @include headings($secondary-font-family);
+  font-size: $smaller-heading;
+  margin: 0px 0px 2% 12%;
 }
-@mixin animate($animation, $duration, $timing, $delay, $fill,$repeat, $play){
-    
-    animation: $animation $duration $timing $delay $fill $repeat $play;
-   
+@mixin animate($animation, $duration, $timing, $delay, $fill, $repeat, $play) {
+  animation: $animation $duration $timing $delay $fill $repeat $play;
 }
-@mixin keyframes($name){
-    @keyframes #{$name}{
-        @content;
-    }
+@mixin keyframes($name) {
+  @keyframes #{$name} {
+    @content;
+  }
 }

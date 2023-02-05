@@ -1,72 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="src/styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Space tourism website</title>
 </head>
+
 <body class="page-destination">
+  <div class="sidenav">
+    <div class="sidenav-container">
+      <div class="sidenav-close">
+        <div class="sidenav-close__btn"></div>
+      </div>
+
+      <a href="index.html" class="sidenav-container__link"><span class="sidenav-link__num">00 </span>home</a>
+      <a href="destination-moon.html" class="sidenav-container__link"><span class="sidenav-link__num">01
+        </span>destination</a>
+      <a href="crew-commander.html" class="sidenav-container__link"><span class="sidenav-link__num">02 </span>crew</a>
+      <a href="technology-vehicle.html" class="sidenav-container__link"><span class="sidenav-link__num">03
+        </span>technology</a>
+    </div>
+  </div>
   <header class="header">
     <div class="header-menu">
-      <div class="header-menu__btn"><img src="assets/shared/icon-hamburger.svg" alt="menu-hamburger"/></div>
+      <div class="header-menu__btn"><img src="assets/shared/icon-hamburger.svg" alt="menu-hamburger" /></div>
       <div class="header-logo">
         <img src="assets/shared/logo.svg" alt="header-logo">
       </div>
       <div class="header-line"></div>
       <nav class="header-navbar">
         <ul class="header-navbar__list">
-          <li class="header-navbar__item"><a class="header-navbar__link" href="index.html"><b class="header-navbar__number">00</b> Home</a></li>
-          <li class="header-navbar__item"><a class="header-navbar__link active-nav" href="destination-moon.html"><b class="header-navbar__number">01</b> Destination</a></li>
-          <li class="header-navbar__item"><a class="header-navbar__link" href="crew-commander.html"><b class="header-navbar__number">02</b> Crew</a></li>
-          <li class="header-navbar__item"><a class="header-navbar__link" href="technology-vehicle.html"><b class="header-navbar__number">03</b> Technology</a></li>
+          <li class="header-navbar__item"><a class="header-navbar__link" href="index.html"><b
+                class="header-navbar__number">00</b> Home</a></li>
+          <li class="header-navbar__item"><a class="header-navbar__link active-nav" href="destination-moon.html"><b
+                class="header-navbar__number">01</b> Destination</a></li>
+          <li class="header-navbar__item"><a class="header-navbar__link" href="crew-commander.html"><b
+                class="header-navbar__number">02</b> Crew</a></li>
+          <li class="header-navbar__item"><a class="header-navbar__link" href="technology-vehicle.html"><b
+                class="header-navbar__number">03</b> Technology</a></li>
         </ul>
       </nav>
     </div>
-    </header>
-<main class="main-destination">
-  <div class="destination-container">
-<h3 class="destination-subheading"><span class="destination-heading__num">01</span> Pick your destination</h3>
-<div class="destination-info">
-<div class="destination-photo"><img src="assets/destination/image-moon.webp" class="destination-photo__image"/></div>
-<div class="destination-description">
-<div class="destination-menu">
-  <ul class="destination-list">
-    <li class="destination-list__item"><a href="destination-moon.html" class="destination-list__link">Moon</a></li>
-    <li class="destination-list__item"><a href="destination-mars.html" class="destination-list__link">Mars</a></li>
-    <li class="destination-list__item"><a href="destination-europa.html" class="destination-list__link">Europa</a></li>
-    <li class="destination-list__item"><a href="destination-titan.html" class="destination-list__link">Titan</a></li>
-  </ul>
-</div>
-<div class="destination-text">
-  <h1 class="destination-text__heading">Moon</h1>
-  <p class="destination-text__paragraph">See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
-    regain perspective and come back refreshed. While you’re there, take in some history 
-    by visiting the Luna 2 and Apollo 11 landing sites.</p>
-    <div class="destination-line"></div>
-</div>
+  </header>
+  <main class="main-destination">
+    <div class="destination-container">
+      <h3 class="destination-subheading"><span class="destination-heading__num">01</span> Pick your destination</h3>
+      <div class="destination-info">
+        <div class="destination-photo"><img src="assets/destination/image-moon.webp" class="destination-photo__image" />
+        </div>
+        <div class="destination-description">
+          <div class="destination-menu">
+            <ul class="destination-list">
+              <li class="destination-list__item"><a href="destination-moon.html"
+                  class="destination-list__link active-nav">Moon</a></li>
+              <li class="destination-list__item"><a href="destination-mars.html" class="destination-list__link">Mars</a>
+              </li>
+              <li class="destination-list__item"><a href="destination-europa.html"
+                  class="destination-list__link">Europa</a></li>
+              <li class="destination-list__item"><a href="destination-titan.html"
+                  class="destination-list__link">Titan</a></li>
+            </ul>
+          </div>
+          <div class="destination-text">
+            <h1 class="destination-text__heading">Moon</h1>
+            <p class="destination-text__paragraph">See our planet as you’ve never seen it before. A perfect relaxing
+              trip away to help
+              regain perspective and come back refreshed. While you’re there, take in some history
+              by visiting the Luna 2 and Apollo 11 landing sites.</p>
+            <div class="destination-line"></div>
+          </div>
 
-<div class="destination-numbers">
-  <div class="destination-distance">
-    <span class="destination-distance__text">Avg. distance</span>
-    <span class="destination-distance__num numbers">384,400 km</span>
-  </div>
-  <div class="destination-time">
-    <span class="destination-time__text">Est. travel time
-     </span>
-    <span class="destination-time__num numbers">3 days</span>
-  </div>
-</div>
-</div>
-  </div>
-  </div>
-</main>
+          <div class="destination-numbers">
+            <div class="destination-distance">
+              <span class="destination-distance__text">Avg. distance</span>
+              <span class="destination-distance__num numbers">384,400 km</span>
+            </div>
+            <div class="destination-time">
+              <span class="destination-time__text">Est. travel time
+              </span>
+              <span class="destination-time__num numbers">3 days</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="index.js"></script>
 </body>
+
 </html>

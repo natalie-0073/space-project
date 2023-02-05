@@ -1,147 +1,144 @@
-.page-technology{
-    @include background-photo('/assets/technology/background-technology-desktop.jpg');
+.page-technology {
+  @include background-photo(
+    "/assets/technology/background-technology-desktop.jpg"
+  );
+  margin: 0;
+}
+.tech-subheading {
+  @include subheading;
+  margin-bottom: 0%;
+  color: $white-pure;
+  &__num {
+    opacity: 0.4;
+  }
+}
+.tech-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.tech-text {
+  max-width: 35%;
+  color: $white-pure;
+  &__heading {
+    @include headings($primary-font-family);
+    font-size: $big-heading;
     margin: 0;
+  }
+  &__subheading {
+    @include headings($primary-font-family);
+    color: $white-opacity;
+  }
+  &__paragraph {
+    @include paragraphs;
+  }
 }
-.tech-subheading{
-    @include subheading;
-    margin-bottom: 0%;
-    color: $white-pure;
-    &__num{
-        opacity: .4;
+.tech-photo {
+  @include keyframes(fade-in) {
+    0% {
+      opacity: 0;
     }
+    100% {
+      opacity: 1;
+    }
+  }
+  @include animate(fade-in, 2s, ease-in-out, 0s, both, 1, running);
+  max-width: 50%;
+  //background-image: url("/assets/technology/image-launch-vehicle-portrait.jpg");
+  &__image {
+    width: 100%;
+    height: auto;
+  }
 }
-.tech-info{
-    display: flex;
+.tech-numbers {
+  display: flex;
+  flex-direction: column;
+  margin-left: 12%;
+  gap: 20px;
+  font-size: $small-heading;
+  &__link {
+    display: block;
+    width: 80px;
+    line-height: 80px;
+    text-decoration: none;
+    color: $white-pure;
+    border: 1px solid $white-pure;
+    border-radius: 50%;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+    &:hover {
+      color: $primary-black;
+      background-color: $white-pure;
+    }
+  }
+}
+.active {
+  color: $primary-black;
+  background-color: $white-pure;
+}
+@media (max-width: 1200px) {
+  .tech-numbers {
+    margin-left: 3%;
+  }
+  .tech-photo {
+    max-width: 40%;
+  }
+}
+@media (max-width: 1000px) {
+  .tech-numbers {
+    margin-left: 2%;
+  }
+}
+@media (max-width: 890px) {
+  .tech-text {
+    &__heading {
+      font-size: $small-heading;
+    }
+  }
+  .tech-numbers__link {
+    width: 70px;
+    line-height: 70px;
+  }
+}
+@media (max-width: 768px) {
+  .page-technology {
+    background: url("/assets/technology/background-technology-tablet.jpg");
+  }
+  .tech-info {
+    flex-direction: column-reverse;
+  }
+  .tech-photo {
+    min-width: 100%;
+    margin-top: 20px;
+    order: 3;
+  }
+  .tech-numbers {
     flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-.tech-text{
-    max-width: 35%;
-    color: $white-pure;
-    &__heading{
-        @include headings($primary-font-family);
-        font-size: $big-heading;
-        margin: 0;
-    }
-    &__subheading{
-        @include headings($primary-font-family);
-        color: $white-opacity;
-    }
-    &__paragraph{
-        @include paragraphs;
-    }
-}
-.tech-photo{
-    @include keyframes(fade-in){
-        0%{
-           opacity: 0;
-        }
-        100%{
-          opacity: 1;
-        }
-    }
-    @include animate(fade-in, 2s, ease-in-out, 0s, both, 1, running);
-    max-width: 50%;
-    //background-image: url("/assets/technology/image-launch-vehicle-portrait.jpg");
-    &__image{
-        
-width: 100%;
-height: auto;
-    }
-}
-.tech-numbers{
-    display: flex;
-    flex-direction: column;
-    margin-left: 12%;
-    gap: 20px;
-    font-size: $small-heading;
-    &__link{
-        display: block;
-        width: 80px;
-        line-height: 80px;
-        text-decoration: none;
-        color: $white-pure;
-        border: 1px solid $white-pure;
-        border-radius: 50%;
-        text-align: center;
-        transition: all .5s ease-in-out;
-        &:hover{
-            color: $primary-black;
-            background-color: $white-pure;
-        }
-    }
-   
-}
-.active{
-    color: $primary-black;
-            background-color: $white-pure;
-}
-@media(max-width:1200px){
-    .tech-numbers{
-        margin-left: 3%;
-    }
-    .tech-photo{
-        max-width: 40%;
-    }
-}
-@media(max-width:1000px){
-    .tech-numbers{
-        margin-left: 2%;
-    }
-   
-}
-@media(max-width: 890px){
-    .tech-text{
-        &__heading{
-            font-size: $small-heading;
-        }
-    }
-    .tech-numbers__link{
-        
-        width: 70px;
-        line-height: 70px;
-    }
-}
-@media(max-width:768px){
-    .page-technology{
-        background: url("/assets/technology/background-technology-tablet.jpg");
-    }
-    .tech-info{
-        flex-direction: column-reverse;
-    }
-    .tech-photo{
-        min-width: 100%;
-        margin-top: 20px;
-        order: 3;
-    }
-    .tech-numbers{
-        flex-direction: row;
-        margin: 2% 0;
-        order: 2;
-        
-    }
-    .tech-text{
-        order: 1;
-        max-width: 60%;
+    margin: 2% 0;
+    order: 2;
+  }
+  .tech-text {
+    order: 1;
+    max-width: 60%;
     text-align: center;
     margin-bottom: 3%;
-    }
-    .tech-subheading{
-        font-size: $tablet-subheading;
-    }
+  }
+  .tech-subheading {
+    font-size: $tablet-subheading;
+  }
 }
-@media(max-width:426px){
-    .page-technology{
-        background: url("/assets/technology/background-technology-mobile.jpg");
+@media (max-width: 426px) {
+  .page-technology {
+    background: url("/assets/technology/background-technology-mobile.jpg");
+  }
+  .tech-text {
+    max-width: 80%;
+  }
+  .tech-numbers {
+    &__link {
+      width: 50px;
+      line-height: 50px;
     }
-    .tech-text{
-        max-width: 80%;
-    }
-    .tech-numbers{
-        &__link{
-            width: 50px;
-            line-height: 50px;
-        }
-    }
+  }
 }
