@@ -216,16 +216,7 @@
   font-family: "Bellefair", serif;
   font-size: 150px;
   margin: 0px;
-  -webkit-animation: fade 5s 0s both linear 1 running;
-          animation: fade 5s 0s both linear 1 running;
-}
-@-webkit-keyframes fade {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+  animation: fade 5s 0s both linear 1 running;
 }
 @keyframes fade {
   0% {
@@ -381,18 +372,13 @@
   gap: 20px;
 }
 
+.destination-photo {
+  margin: 0;
+  max-width: 24%;
+}
 .destination-photo__image {
   width: 100%;
-  -webkit-animation: rotate 50s 0s both linear infinite paused;
-          animation: rotate 50s 0s both linear infinite paused;
-}
-@-webkit-keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+  animation: rotate 50s 0s both linear infinite paused;
 }
 @keyframes rotate {
   0% {
@@ -403,12 +389,7 @@
   }
 }
 .destination-photo__image:hover {
-  -webkit-animation-play-state: running;
-          animation-play-state: running;
-}
-
-.destination-photo {
-  max-width: 24%;
+  animation-play-state: running;
 }
 
 .destination-list {
@@ -450,16 +431,7 @@
 }
 
 .destination-text__heading {
-  -webkit-animation: scaleIn 0.5s 0s both linear 1 running;
-          animation: scaleIn 0.5s 0s both linear 1 running;
-}
-@-webkit-keyframes scaleIn {
-  0% {
-    transform: scale(0.2);
-  }
-  100% {
-    transform: scale(1);
-  }
+  animation: scaleIn 0.5s 0s both linear 1 running;
 }
 @keyframes scaleIn {
   0% {
@@ -586,8 +558,7 @@
     max-width: 80%;
   }
   .destination-photo__image {
-    -webkit-animation-play-state: running;
-            animation-play-state: running;
+    animation-play-state: running;
   }
   .numbers {
     font-size: 32px;
@@ -655,12 +626,14 @@
   bottom: 0;
   justify-content: space-between;
   align-items: center;
-  max-height: 550px;
   margin: 0% 12%;
 }
 
+.crew-photo {
+  margin: 0;
+}
 .crew-photo__image {
-  max-width: 100%;
+  max-width: 90%;
 }
 
 .crew-nav {
@@ -692,7 +665,7 @@
 }
 
 .crew-text {
-  max-width: 48%;
+  max-width: 55%;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -707,16 +680,7 @@
   text-transform: uppercase;
   font-family: "Bellefair", serif;
   font-size: 56px;
-  -webkit-animation: typing 1s 1s both steps(14) 1 running;
-          animation: typing 1s 1s both steps(14) 1 running;
-}
-@-webkit-keyframes typing {
-  0% {
-    width: 0px;
-  }
-  100% {
-    width: 100%;
-  }
+  animation: typing 1s 1s both steps(14) 1 running;
 }
 @keyframes typing {
   0% {
@@ -921,17 +885,9 @@
 }
 
 .tech-photo {
-  -webkit-animation: fade-in 2s ease-in-out 0s both 1 running;
-          animation: fade-in 2s ease-in-out 0s both 1 running;
+  margin: 0;
+  animation: fade-in 2s ease-in-out 0s both 1 running;
   max-width: 50%;
-}
-@-webkit-keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 @keyframes fade-in {
   0% {

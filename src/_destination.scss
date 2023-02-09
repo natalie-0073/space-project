@@ -25,23 +25,24 @@
   max-width: 30%;
   gap: 20px;
 }
-.destination-photo__image {
-  width: 100%;
-  @include keyframes(rotate) {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  @include animate(rotate, 50s, 0s, both, linear, infinite, paused);
-  &:hover {
-    animation-play-state: running;
-  }
-}
 .destination-photo {
+  margin: 0;
   max-width: 24%;
+  &__image {
+    width: 100%;
+    @include keyframes(rotate) {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    @include animate(rotate, 50s, 0s, both, linear, infinite, paused);
+    &:hover {
+      animation-play-state: running;
+    }
+  }
 }
 .destination-list {
   display: flex;

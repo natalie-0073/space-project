@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Our first stop in outer space travel is Moon.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
@@ -17,7 +18,7 @@
 </head>
 
 <body class="page-destination">
-  <div class="sidenav">
+  <aside class="sidenav">
     <div class="sidenav-container">
       <div class="sidenav-close">
         <div class="sidenav-close__btn"></div>
@@ -30,7 +31,7 @@
       <a href="technology-vehicle.html" class="sidenav-container__link"><span class="sidenav-link__num">03
         </span>technology</a>
     </div>
-  </div>
+  </aside>
   <header class="header">
     <div class="header-menu">
       <div class="header-menu__btn"><img src="assets/shared/icon-hamburger.svg" alt="menu-hamburger" /></div>
@@ -56,10 +57,12 @@
     <div class="destination-container">
       <h3 class="destination-subheading"><span class="destination-heading__num">01</span> Pick your destination</h3>
       <div class="destination-info">
-        <div class="destination-photo"><img src="assets/destination/image-moon.webp" class="destination-photo__image" />
-        </div>
-        <div class="destination-description">
-          <div class="destination-menu">
+        <figure class="destination-photo">
+          <img src="assets/destination/image-moon.webp" class="destination-photo__image"
+            alt="Moon image. Spinning when hover." />
+        </figure>
+        <article class="destination-description">
+          <section class="destination-menu">
             <ul class="destination-list">
               <li class="destination-list__item"><a href="destination-moon.html"
                   class="destination-list__link active-nav">Moon</a></li>
@@ -70,17 +73,17 @@
               <li class="destination-list__item"><a href="destination-titan.html"
                   class="destination-list__link">Titan</a></li>
             </ul>
-          </div>
-          <div class="destination-text">
+          </section>
+          <section class="destination-text">
             <h1 class="destination-text__heading">Moon</h1>
             <p class="destination-text__paragraph">See our planet as you’ve never seen it before. A perfect relaxing
               trip away to help
               regain perspective and come back refreshed. While you’re there, take in some history
               by visiting the Luna 2 and Apollo 11 landing sites.</p>
             <div class="destination-line"></div>
-          </div>
+          </section>
 
-          <div class="destination-numbers">
+          <section class="destination-numbers">
             <div class="destination-distance">
               <span class="destination-distance__text">Avg. distance</span>
               <span class="destination-distance__num numbers">384,400 km</span>
@@ -90,8 +93,8 @@
               </span>
               <span class="destination-time__num numbers">3 days</span>
             </div>
-          </div>
-        </div>
+          </section>
+        </article>
       </div>
     </div>
   </main>

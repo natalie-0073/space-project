@@ -17,12 +17,13 @@
   bottom: 0;
   justify-content: space-between;
   align-items: center;
-  max-height: 550px;
   margin: 0% 12%;
 }
-
-.crew-photo__image {
-  max-width: 100%;
+.crew-photo {
+  margin: 0;
+  &__image {
+    max-width: 90%;
+  }
 }
 .crew-nav {
   display: flex;
@@ -47,11 +48,12 @@
   height: 100%;
   border-radius: 50%;
 }
+
 .active {
   background: $white-pure;
 }
 .crew-text {
-  max-width: 48%;
+  max-width: 55%;
 
   display: flex;
   flex-direction: column;
